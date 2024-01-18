@@ -5,7 +5,7 @@
 .container{
     @include container;
     @include flex-container;
-}
+};
 
 .container{
     align-items: center;
@@ -29,7 +29,7 @@ nav{
 
         > .nav-section {
             text-align: center;
-            padding: 5px 10px;
+            padding: 0 10px;
         }                
             a{
                 @include nav-text;

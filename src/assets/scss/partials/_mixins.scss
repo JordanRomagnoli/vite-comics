@@ -1,13 +1,12 @@
 @use "./_variables" as *;
 
 @mixin degug-container{
-    
+    min-height: 150px;
 };
 
 @mixin container {
     width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
 };
 
 @mixin flex-container {

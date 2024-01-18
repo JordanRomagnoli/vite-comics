@@ -4,8 +4,8 @@
     Importazione componente
 */
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue'
-import AppFooter from './components/AppFooter.vue'
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
     data() {
@@ -26,19 +26,16 @@ export default {
 </script>
 
 <template>
-    <div>
-        <!--
-            Utilizzo del componente
-        -->
-        <AppHeader/>
-        <AppMain/>
-        <AppFooter/>
+    
+    <!--
+        Utilizzo del componente
+    -->
+    <AppHeader/>
+    <AppMain/>
+    <AppFooter/>
         
-    </div>
+    
 </template>
 
 <style lang="scss" scoped>
-
-    @use "assets/scss/main.scss" as *;
-    
 </style>

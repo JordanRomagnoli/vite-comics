@@ -1,3 +1,66 @@
 @use "partials/_reset" as *;
 @use "partials/_variables" as *;
 @use "partials/_mixins" as *;
+
+.main-top{
+    .container{
+        @include degug-container;
+        @include container;
+    }
+};
+
+
+
+.main-top{
+    background-color: $color-main-top;
+    color: white;
+
+    .container{
+        display: flex;
+        align-items: center;
+    }
+};
+
+.main-bottom{
+    background-color: $color-main-bottom;
+    color: white;
+
+    .container{
+        @include container;
+        display: flex;
+        align-items: center;
+        padding: 60px 0;
+
+        ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+};
+
+a{
+    display: flex;
+    align-items: center;
+    @include nav-text;
+    text-decoration: none;
+    color: white;
+
+    .img-frame{
+        width: 50px;
+        height: 50px;
+        
+        margin-right: 20px;
+    
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+        
+    }
+}
+
+
