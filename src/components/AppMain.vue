@@ -36,7 +36,7 @@
     </script>
 
 <template>
-    <div class="main-top">
+    <section class="main-top">
         <div class="container">
             <div>
                 <h2>
@@ -44,9 +44,9 @@
                 </h2>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="main-bottom">
+    <section class="main-bottom">
         <div class="container">
             <ul>
                 <li v-for="elem in sectionLink">
@@ -62,7 +62,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

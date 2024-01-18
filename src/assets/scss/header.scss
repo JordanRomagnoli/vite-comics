@@ -1,6 +1,6 @@
-@use "partials/reset" as *;
-@use "partials/variables" as *;
-@use "partials/mixins" as *;
+@use "partials/_reset" as *;
+@use "partials/_variables" as *;
+@use "partials/_mixins" as *;
 
 .container{
     @include container;

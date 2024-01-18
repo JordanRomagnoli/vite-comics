@@ -1,0 +1,105 @@
+@use "partials/_reset" as *;
+@use "partials/_variables" as *;
+@use "partials/_mixins" as *;
+
+
+
+
+
+
+.footer-top{
+    background-color: $color-footer;
+    background-image: url(../../../public/img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    .container{
+        @include container;
+        @include flex-container;
+        align-items: center;
+
+        > ul{
+            display: flex;
+            list-style: none;
+            padding: 20px 0;
+
+            > li{
+                padding: 15px 0;
+                margin-right: 30px;
+                color: white;
+
+                h3{
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                ul{
+                    list-style: none;
+                    margin-bottom: 20px;
+
+                    li{
+                        padding-top: 5px;
+                        a{
+                            font-size: 0.9rem;
+                            text-decoration: none;
+                            color: gray;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+};
+
+.lg-img-frame{
+    height: 430px;
+    width: 50%;
+    background-image: url(../../../public/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+};
+
+.footer-bottom{
+
+    background-color: $color-footer;
+    .container{
+        @include container;
+        @include flex-container;
+        @include degug-container;
+        align-items: center;
+
+        > a{
+            @include nav-text;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            border-width: 1px;
+            border-style: solid;
+            border-image: linear-gradient(to right, rgb(0, 247, 255), rgb(42, 28, 234)) 1;
+        }
+
+        .social-container{
+            display: flex;
+            align-items: center;
+            span{
+                @include nav-text;
+                font-size: 1rem;
+                color: $color-main-bottom;
+                padding: 10px
+            };
+            ul{
+                list-style: none;
+                display: flex;
+
+                li{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
