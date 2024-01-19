@@ -1,10 +1,5 @@
-@use "partials/_reset" as *;
 @use "partials/_variables" as *;
 @use "partials/_mixins" as *;
-
-
-
-
 
 
 .footer-top{
@@ -44,6 +39,12 @@
                             font-size: 0.9rem;
                             text-decoration: none;
                             color: gray;
+                            padding: 2px 0;
+                            transition: all .1s ease-in;
+
+                            &:hover{
+                                color: rgb(255, 255, 255);
+                            }
                         }
                     }
                     

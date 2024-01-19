@@ -1,42 +1,31 @@
 <script>
+    import AppHeader from './components/AppHeader.vue';
+    import AppMain from './components/AppMain.vue';
+    import AppFooter from './components/AppFooter.vue';
 
-/*
-    Importazione componente
-*/
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+    export default {
+        data() {
+            return { 
+                
+            }
+        },
+        
+        components: {
 
-export default {
-    data() {
-        return { 
-             
-        }
-    },
-    /*
-        Dichiarazione dei componenti all'interno dell'oggetto
-    */
-    components: {
+            AppHeader,
+            AppMain,
+            AppFooter
+        },
+    };
 
-        AppHeader,
-        AppMain,
-        AppFooter
-    },
-}
 </script>
 
 <template>
-    
-    <!--
-        Utilizzo del componente
-    -->
     <AppHeader/>
     <AppMain/>
     <AppFooter/>
-        
-    
 </template>
 
-<style lang="scss" scoped>
-    @use "./assets/scss/partials/reset"
+<style lang="scss">
+    @import "./assets/scss/partials/reset";
 </style>

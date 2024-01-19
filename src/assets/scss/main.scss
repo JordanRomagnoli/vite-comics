@@ -1,8 +1,16 @@
-@use "partials/_reset" as *;
+
 @use "partials/_variables" as *;
 @use "partials/_mixins" as *;
 
+
 .main-top{
+    >.jumbotron-frame{
+        min-height: 400px;
+        background-image: url(../../../public/img/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
     .container{
         @include degug-container;
         @include container;
