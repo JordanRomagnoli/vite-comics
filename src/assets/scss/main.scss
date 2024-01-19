@@ -27,7 +27,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
             padding: 55px 0;
 
             button{
@@ -35,7 +34,8 @@
                 background-color: $color-main-bottom;
                 @include nav-text;
                 color: white;
-                padding: 9px 45px; 
+                padding: 9px 45px;
+                cursor: pointer;
             }
         }
     }

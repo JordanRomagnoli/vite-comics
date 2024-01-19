@@ -127,7 +127,7 @@
             </h1>
             <div class="comix-container">
 
-                <SingleComix v-for="comic in comixList" 
+                <SingleComix v-for="comic in comixList"
                 :product="comic"
                 :image="comic.thumb"
                 :prizing="comic.price"

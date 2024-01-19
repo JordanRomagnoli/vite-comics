@@ -37,7 +37,7 @@
 
     > div{
         width: 180px;
-        height: 180px;
+        height: 220px;
         border-radius: 10px;
         border: 1px solid white;
         overflow: hidden;
