@@ -12,8 +12,32 @@
         background-position: top;
     }
     .container{
-        @include degug-container;
         @include container;
+        position: relative;
+
+        h1{
+            position: absolute;
+            top: -4%;
+            background-color: $color-main-bottom;
+            padding: 9px 35px;
+            text-transform: uppercase;
+        }
+
+        .comix-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 55px 0;
+
+            button{
+                border: none;
+                background-color: $color-main-bottom;
+                @include nav-text;
+                color: white;
+                padding: 9px 45px; 
+            }
+        }
     }
 };
 
@@ -24,8 +48,7 @@
     color: white;
 
     .container{
-        display: flex;
-        align-items: center;
+        
     }
 };
 

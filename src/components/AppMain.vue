@@ -1,4 +1,6 @@
 <script>
+    import SingleComix from './SingleComix.vue';
+
     export default {
         data() {
             return { 
@@ -107,6 +109,10 @@
                 ],
             }
         },
+
+        components: {
+            SingleComix,
+        },
     }
     </script>
 
@@ -116,10 +122,20 @@
 
         </div>
         <div class="container">
-            <div>
-                <h2>
-                    Content goes here
-                </h2>
+            <h1>
+                current series
+            </h1>
+            <div class="comix-container">
+
+                <SingleComix v-for="comic in comixList" 
+                :product="comic"
+                :image="comic.thumb"
+                :prizing="comic.price"
+                :serial="comic.series"
+                />
+
+                <button>load more</button>
+
             </div>
         </div>
     </section>
